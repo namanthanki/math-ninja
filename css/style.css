@@ -1,0 +1,379 @@
+/*#845EC2 #B39CD0 #FBEAFF #00C9A7 #1a1a1a*/
+
+:root {
+    --clr-text: #1a1a1a;
+    --clr-primary: #00C9A7;
+    --clr-primary-dark: rgb(0, 136, 113);
+    --clr-accent: #845EC2;
+    --clr-accent-dark: rgb(89, 64, 128);
+    --clr-hov: #B39CD0; 
+    --clr-bg: #FBEAFF;
+
+    --ff-serif: "Nueton", serif;
+    --ff-title: "IBM Plex Sans", sans-serif;
+    --ff-logo: "Playfair Display", serif;
+}
+
+html {
+    font-family: var(--ff-serif);
+    color: var(--clr-text);
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    list-style: none;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+.section-title {
+    color: var(--clr-primary);
+}
+
+
+.section-title-small {
+    font-size: 3rem;
+}
+
+.section-title-small small{
+    font-size: 0.7em;
+    display: block;
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    text-align: center;
+} 
+
+.logo a {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+/*typography*/
+
+h1,h2,h3,h4,p {
+    margin: 0;
+}
+
+h2, h3{
+    font-family: var(--ff-title);
+    line-height: 1.175;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    margin-bottom: 0.85em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/*navigation*/
+
+header {
+    padding: 1em 0 2em;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0.5em;
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--clr-hov);
+    text-decoration: underline;
+}
+
+/*buttons*/
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 0.75em 2.5em;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 0.5em 0;
+    border-radius: .25em;
+}
+
+.btn-primary {
+    background-color: var(--clr-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--clr-primary-dark);
+}
+
+.btn-accent {
+    background: var(--clr-accent);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background: var(--clr-accent-dark);
+}
+
+/*homepage styles*/
+
+.hero {
+    background-color: #333333;
+    background-image: url(../img/Maths-hero.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 40%;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 15vh 1em;
+}
+
+.hero {
+    padding: 20%;
+}
+
+.about-us {
+    background: var(--clr-hov);
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+}
+
+.about-us__intro {
+    padding: 3em 1em 1.5em;
+}
+
+.about-us__body {
+    padding: 1.5em 1em 3em;
+}
+
+.order-online {
+    background: #f0f0f0;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.product {
+    background: #f0f0f0;
+    padding: 1em;
+    border-radius: 0.35em;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+.product:last-of-type {
+    margin-bottom: 2em;
+}
+
+.product__content {
+    padding: 1.5em;
+}
+
+.product__title {
+    color: var(--clr-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background: var(--clr-accent-dark);
+    padding: 3em 1em;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+footer a {
+    color: inherit;
+}
+
+.footer-nav {
+    list-style: none;
+}
+
+.footer-nav a {
+    padding: 0.50em;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.ion-social-facebook,
+.ion-social-twitter {
+    font-size: 2em;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5999;
+}
+
+.ion-social-twitter:hover {
+    color: #55acee;
+}
+
+@media only screen and (min-width: 750px) {
+
+    section {
+        padding: 6em 1em;
+    }
+
+    img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .btn-group {
+        margin-top: 1em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn + .btn {
+        margin-left: 0.5em;
+    }
+
+    .about-us {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-us__intro,
+    .about-us__body {
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 3em 1em;
+    }
+
+    .about-us__intro > * {
+        max-width: 27rem;
+    }
+
+    .parabody1 {
+        margin-top: 30%;
+    }
+
+    .order-online > * {
+        max-width: 65ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .order-online {
+        display: grid;
+    }
+
+    .products {
+        flex-direction: row;
+        max-width: 1200px;
+    }
+
+    .product {
+        margin: 0;
+        flex: 0 1 33%;
+    }
+
+    .product + .product {
+        margin-left: 1em;
+    }
+
+    .product:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    img {
+        width: 300px;
+        height: 160px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    img {
+        width: 300px;
+        height: 170px;
+    }
+
+    .hero {
+        padding: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+    img {
+        width: 300px;
+        height: 180px;
+    }
+
+    .parabody1 {
+        margin-top: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1366px) {
+
+    img {
+        width: 300px;
+        height: 180px;
+    }
+    
+    .parabody1 {
+        margin-top: 10%;
+    }
+
+}
